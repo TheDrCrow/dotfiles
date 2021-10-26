@@ -1,0 +1,672 @@
+{
+    //------ WORKBENCH -------
+
+    "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "left",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#B48EAD",
+        "statusBar.noFolderBackground": "#B48EAD",
+        "statusBar.debuggingBackground": "#B48EAD",
+        "statusBar.foreground": "#d8dee9",
+        "statusBar.debuggingForeground": "#d8dee9"
+    },
+    "workbench.activityBar.visible": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    //------ EDITOR -------
+
+    "editor.fontFamily": "'Cascadia Mono PL' ,  hack ,  'Consolas' ,  'Courier New',  monospace , firacode mono​",
+    "editor.autoIndent": "none",
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "bounded",
+    "editor.renderWhitespace": "none",
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.tabCompletion": "on",
+    "editor.suggest.showStatusBar": true,
+    "editor.fontWeight": 650,
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "relative",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.suggest.showInlineDetails": false,
+
+    // ---- OTHER UI, FORMATS etc
+
+    "window.zoomLevel": -1,
+    "window.menuBarVisibility": "compact",
+    "explorer.openEditors.visible": 0,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    "html.format.contentUnformatted": "",
+    "html.format.extraLiners": "head, body, /html",
+    "html.format.enable": false,
+    "html.format.endWithNewline": true,
+
+    "zenMode.restore": false,
+    "zenMode.centerLayout": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideStatusBar": false,
+
+    //------ OTHERS -------
+
+    "terminal.integrated.tabs.enabled": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "markdown-preview-enhanced.liveUpdate": true,
+    "markdown-table-formatter.globalColumnSizes": "Same Table Size",
+    "markdown-table-formatter.markdownGrammarScopes": [
+        "markdown",
+        "md"
+    ],
+    "markdown.styles": [
+        "U:\\CrowNEST\\stylesheet.css"
+    ],
+    "search.quickOpen.includeSymbols": true,
+    "update.mode": "none",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.confirmSync": false,
+    
+//------ VIM -------
+
+    // Vim Motions.    
+    "vim.easymotion": true,
+    "vim.easymotionMarkerFontWeight": "bold",
+    "vim.easymotionMarkerBackgroundColor": "green",
+    //  "vim.easymotionMarkerYOffset": "number", 
+    "vim.easymotionMarkerForegroundColorOneChar": "white",
+    "vim.easymotionMarkerForegroundColorTwoCharFirst": "white",
+    "vim.easymotionMarkerForegroundColorTwoCharSecond": "white",
+
+
+    "vim.sneak": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.leader": "<space>",
+
+    // Vim Status bar. 
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#5e81ac", "#d8dee9"
+    ],
+    "vim.statusBarColors.insert": [
+        "#bf616a", "#eeeeee"
+    ],
+    "vim.statusBarColors.visual": [
+        "#d08770", "#e5e9f0"
+    ],
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.cursorStylePerMode.visual": "block-outline",
+    "vim.cursorStylePerMode.visualblock": "block-outline",
+    "vim.cursorStylePerMode.visualline": "block-outline",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "underline",
+    "vim.highlightedyank.duration": 900,
+    "vim.highlightedyank.enable": true,
+    "vim.searchHighlightColor": "#078dc6",
+
+
+    // VIM INSERTIONS 
+
+    // Insert Mode
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","k"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>","s","x","x","c","w"]
+        },
+        {
+            "before": ["J","J"],
+            "after": ["<Esc>","S","x","x","c","w" ]
+        },
+        {
+            "before": ["i","i"],
+            "after": ["$","{","|","|","}","<Esc>","h","h","i"]
+        },
+        {
+            "before": ["k","k" ],
+            "after": [ "\t","<Esc>","s","x","x","c","w","a"]
+        },
+        {
+            "before": ["w","w"],
+            "after": ["N","i","l",".","<Esc>","s","x","x","c","w",]
+        },
+        {
+            "before": ["q","q"],
+            "after": ["N","o","r","m","a","l",".","<Esc>","s","x","x","c","w" ]
+        },
+    // BAD SPELLINGS GO HERE !!  
+        {
+            "before": ["t","e","h"],
+            "after": ["t","h","e"]
+        },
+    ],
+
+    // Normal Mode
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["s","s"],
+            "after": ["s","x","x","c","w"]
+        },
+        {
+            "before": ["z","T"],
+            "after": ["z","t","i","-","-","-","-","\n"]
+        },
+        {
+            "before": ["<leader>","v"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        {
+            "before": ["<leader>","e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<leader>","f"],
+            "commands": ["revealInExplorer"]
+        },
+        {
+            "before": [
+                "s","s"],
+            "after": ["s","x","x","c","w"]
+        },
+        {
+            "before": ["z","T"],
+            "after": ["z","t","i","-","-","-","-","\n"]
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-^>"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+    ],
+
+    // VIM - Handlekeys 
+
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-d>": false,
+        "<C-c>": false,
+        "<C-x>": false,
+        "<C-v>": false,
+        "<C-z>": false,
+        "<C-y>": false,
+    },
+
+//--- Log File HIGHLIGHTER ----
+
+		"logFileHighlighter.customPatterns": [
+			{
+				"pattern": "MAIN FINDINGS:",
+				"foreground": "#8fbcbb"
+			},
+			{
+				"pattern": "INCIDENTAL FINDINGS:",
+				"foreground": "#88c0d0"
+			},
+			{
+				"pattern": "IMPRESSION:",
+				"foreground": "#81a1c1"
+			},
+			{
+				"pattern": "PRIMARY CONCLUSION:",
+				"foreground": "#5e81ac"
+			},
+			{
+				"pattern": "SECONDARY CONCLUSIONS:",
+				"foreground": "#d08770"
+            },   
+			{
+				"pattern": "INFORMATION EFFICIENCY SCORE:",
+				"foreground": "#ebcb8b"
+			},
+			{
+				"pattern": "INFORMATION NOTES:",
+				"foreground": "#a3be8c"
+			},
+			{
+				"pattern": "uid",
+				"foreground": "#b48ead"
+			},
+			{
+				"pattern": "sex:",
+				"foreground": "#8fbcbb"
+			},
+			{
+				"pattern": "age:",
+				"foreground": "#88c0d0"
+			},
+			{
+				"pattern": "referrer:",
+				"foreground": "#5e81ac"
+			},
+			{
+				"pattern": "in_patient",
+				"foreground": "#d08770"
+			},
+			{
+				"pattern": "on_call",
+				"foreground": "#ebcb8b"
+			},
+			{
+				"pattern": "q_score",
+				"foreground": "#a3be8c"
+			},
+			{
+				"pattern": "procedure_code",
+				"foreground": "#b48ead"
+			},
+			{
+				"pattern": "CLINICAL TYPE:",
+				"foreground": "#8fbcbb"
+			},
+			{
+				"pattern": "CLINICAL DATA ELEMENT:",
+				"foreground": "#88c0d0"
+			},
+			{
+				"pattern": "CLINICAL NOTES:",
+				"foreground": "#5e81ac"
+			},
+			{
+				"pattern": "PROCEDURE:",
+				"foreground": "#d08770"
+			},
+			{
+				"pattern": "QUALITY:",
+				"foreground": "#ebcb8b"
+			},
+			{
+				"pattern": "Limited by ",
+				"foreground": "#a3be8c"
+			},
+			{
+				"pattern": "COMPARISON:",
+				"foreground": "#b48ead"
+			},
+			{
+				"pattern": "Showing:",
+				"foreground": "#5e81ac"
+			},
+			{
+				"pattern": "METS",
+				"foreground": "#257fad"
+			},
+			{
+				"pattern": "TUMOUR",
+				"foreground": "#6b6bb8"
+			},
+			{
+				"pattern": "NODES",
+				"foreground": "#b72dd2"
+			},
+			{
+				"pattern": "xxx",
+				"foreground": "#FF1111"
+			},
+			{
+				"pattern": "xx",
+				"foreground": "#FF1111"
+			}
+		],
+
+		"files.associations": {
+			"*.txt": "log"
+		},
+
+//----VSCODE EDITOR MACROS-----------------
+    //----for Ctrl-L to make CSV from report -----
+    "editormacros": {
+        "makeCSV": {
+            "type": "multiple",
+            "args": {
+                "macros": [
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "\r\n",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "uid: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "<week>",
+                            "replacePattern": "5113",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": " ;",
+                            "replacePattern": ";"
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "sex: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "age: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "referrer: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "in_patient: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "on_call: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "q_score: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "procedure_code: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "CLINICAL TYPE: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "CLINICAL DATA ELEMENT: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "CLINICAL NOTES: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "PROCEDURE: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "QUALITY: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "Limited by: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "Limited by :",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "COMPARISON: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "Showing: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "which showed: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "Which showed: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "MAIN FINDINGS:",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "INCIDENTAL FINDINGS:",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "IMPRESSION:",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "PRIMARY CONCLUSION: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "SECONDARY CONCLUSIONS: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "SECONDARY CONCLUSION: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "INFORMATION EFFICIENCY SCORE: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "INFORMATION NOTES: ",
+                            "replacePattern": "",
+                        }
+                    },
+                    {
+                        "type": "replace",
+                        "args": {
+                            "regex": true,
+                            "replaceAll": true,
+                            "multiline": true,
+                            "searchPattern": "----",
+                            "replacePattern": "\r\n",
+                        }
+                    },
+                ]
+            }
+        }
+    },
+}
